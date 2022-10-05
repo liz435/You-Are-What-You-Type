@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier';
+  font-size: 7pt;
+  line-height: 3pt;
+}
+
+
+div{
+    margin-top: -200px;
+    margin-left: 80px;
+    margin-right: auto;
+}
+
+
+.button{
+    margin-left: 83%;
+    height: 150px;
+    width: 150px;
+    color: blueviolet;
+    display: inline;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+
+    color:rgb(252, 0, 0);
+    font-size:30px ;
+
+}
+
+body{
+    background-color: rgb(208, 208, 208);
+    font-size: 5px;
+}
+
+
+
+
+  

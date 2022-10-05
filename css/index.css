@@ -1,0 +1,36 @@
+body{
+ 
+    background-image: url("google.png");
+    background-size: 10%;
+
+}
+
+#title{
+    text-align: center;
+    margin-top: 75px;
+}
+
+.intro{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.button{
+    width: 80px;
+    height: 80px;
+    margin-left: 300px;
+    margin-top: 220px;
+    margin-right: 150px;
+    border-radius: 30%;
+    background-color: rgb(255, 190, 90);
+}
+
+.button-arr{
+    width: 80px;
+    height: 80px;
+    margin: 150px;
+    border-radius: 30%;
+    background-color: rgb(255, 190, 90);
+}
