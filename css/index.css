@@ -8,6 +8,8 @@ body{
 #title{
     text-align: center;
     margin-top: 75px;
+
+    margin: 63px;
 }
 
 .intro{
@@ -17,20 +19,26 @@ body{
     width: 1000px;
 }
 
-.button{
-    width: 80px;
-    height: 80px;
-    margin-left: 300px;
-    margin-top: 220px;
-    margin-right: 150px;
-    border-radius: 30%;
-    background-color: rgb(255, 190, 90);
+.button_container{
+    width:150px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
-.button-arr{
-    width: 80px;
-    height: 80px;
-    margin: 150px;
-    border-radius: 30%;
+.button{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-top: -50px;
+    margin-right: auto;
+    border-radius: 37%;
     background-color: rgb(255, 190, 90);
+    position: relative;
 }
+
+.button:hover{
+    background-color: blanchedalmond;
+}
+

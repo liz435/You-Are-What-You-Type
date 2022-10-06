@@ -1,16 +1,13 @@
 
-//  const density = ".:-i|=+%O#@"
-
-//Core
 let inputW=[];
-let inputQ;
 let mod = "";
 let idKey =" .:░▒▓█";
+let button_submit;
+let msg = "Don't think about it, just type something"
 
  let asciiDiv;
  
  function preload(){
-  // video = loadImage('2001.png');
  video = createCapture(VIDEO);
  }
 
@@ -18,42 +15,50 @@ let idKey =" .:░▒▓█";
   var canvas = createCanvas(300, 300);
   canvas.parent('canvasForHTML');
 
-
-  // canvas.parent('canvasForHTML');
-  
-
-  // inputs = createInput("2020");
-  // inputs.input();
-  // inputs.position(0, 0);
-  // inputs.size(100);
-
-   video.size(340,180);
+   video.size(175,80);
    asciiDiv = createDiv();
-
-   inputQ = createInput("type something below but there is no undo");
-   inputQ.input(data);
-   inputQ.position(1120, 400);
-   inputQ.size(250);
    
-   inputW = createInput(" ");
+   inputW = createInput("");
    inputW.input(data);
    inputW.position(1120, 550);
-   inputW.size(280);
+   inputW.size(220);
+   inputW.style('font-size', '20px');
   
+   button_submit = createButton("enter")
+   button_submit.position(1250,590);
+   button_submit.size(100);
+   button_submit.mouseClicked(submit);
+
  }
 
- function data() {
+ function submit(){
   mod = inputW.value();
+  inputW.value(" ");
   idKey+=mod;
-return idKey;
+    return idKey
+ }
+
+
+ function data() {
 
 }
  
  function draw() {
-
-    // video.resize(350,350);
    video.hide();
    video.loadPixels();
+
+   if(keyIsDown(13)){
+    submit();
+   }
+
+   var div = createDiv('');
+   div.html(msg);   
+   div.position(1040, 600); 
+   div.style('font-size', '24px');
+   div.style('color', 'white');
+   div.style('width',"300px")
+   div.style('line-height','20px')
+
    let asciiImage = " ";
    for (let j = 0; j < video.height; j++) {
      for (let i = 0; i < video.width; i++) {
