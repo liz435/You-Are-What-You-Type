@@ -36,9 +36,12 @@ body{
     border-radius: 37%;
     background-color: rgb(255, 190, 90);
     position: relative;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .button:hover{
-    background-color: blanchedalmond;
+    background-color: rgb(250, 205, 142);
+    box-shadow: 10px,black;
 }
 
